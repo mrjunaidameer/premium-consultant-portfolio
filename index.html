@@ -1,223 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aliyan Asgher | Senior Business Strategist</title>
-    <link rel="icon" type="image/png" href="junaid ameer.png">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Junaid Ameer | Senior Business Strategist</title>
+<meta name="description" content="Junaid Ameer helps CEOs and corporate leaders optimise operations, lead their market and scale to 7-figures and beyond. Book a private strategy session.">
+<meta name="theme-color" content="#0A0713">
+<link rel="canonical" href="https://your-domain.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Junaid Ameer | Senior Business Strategist">
+<meta property="og:description" content="Strategy for CEOs and corporate leaders who want sustainable, high-performance growth.">
+<meta property="og:image" content="Junaidameer.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="junaid ameer.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Junaid Ameer","jobTitle":"Senior Business Strategist","description":"Business strategy for CEOs and corporate leaders.","image":"Junaidameer.jpg"}</script>
+<style>
+:root{
+  --bg:#0A0713;--card:#140E25;--text:#F3F0FA;--muted:#A8A1BF;
+  --gold:#C8F43A;--soft:#B9A3FF;--ink:#14102A;--border:rgba(185,163,255,.16);
+  --g:139,92,246;--teal:45,212,191;--vio:236,72,153;
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:72px;
+  --r:20px;--pill:999px;--nav:64px;
+  --head:'Bricolage Grotesque',system-ui,sans-serif;--body:'Instrument Sans',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nav);-webkit-text-size-adjust:100%}
+body{font:400 1rem/1.6 var(--body);color:var(--text);background:var(--bg);overflow-x:hidden}
+body::before{content:"";position:absolute;inset:0 0 auto;height:min(90vh,760px);background:radial-gradient(60% 65% at 50% 0,rgba(139,92,246,.3),transparent 70%);pointer-events:none}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.02em;line-height:1.08}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+svg.i{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+.wrap{width:min(100% - 32px,1120px);margin-inline:auto;position:relative}
+section{padding-block:clamp(48px,9vw,96px)}
+.h2{font-size:clamp(1.75rem,6.4vw,3rem);font-weight:800;max-width:18ch}
+.lead{color:var(--muted);font-size:1.0625rem;max-width:52ch;margin-top:var(--s4)}
 
-    <style>
-        :root {
-            --navy: #0f172a;
-            --gold: #d4af37;
-            --gold-hover: #b8860b;
-        }
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);min-height:48px;padding:0 var(--s5);border-radius:var(--pill);font-weight:600;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-p{background:var(--gold);color:var(--ink)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(200,244,58,.55)}
+.btn-g{border:1px solid var(--border);color:var(--text)}
+.btn-g:hover{transform:translateY(-2px);background:rgba(185,163,255,.08)}
 
-        body {
-            font-family: 'Lato', sans-serif;
-            overflow-x: hidden;
-        }
+/* nav */
+.nav{position:sticky;top:0;z-index:50;height:var(--nav);background:rgba(10,7,19,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding-top:env(safe-area-inset-top,0px);box-sizing:content-box}
+.nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font:800 1.25rem var(--head);letter-spacing:-.02em}
+.logo b{color:var(--gold);font-weight:800}
+.links{display:none}
+.burger{width:44px;height:44px;display:grid;place-content:center;gap:6px;border-radius:12px}
+.burger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:transform .3s,opacity .2s}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.menu{position:absolute;left:0;right:0;top:100%;display:grid;gap:var(--s1);padding:var(--s3) 16px var(--s5);background:rgba(10,7,19,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border);visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .25s,transform .25s,visibility .25s}
+.menu.open{visibility:visible;opacity:1;transform:none}
+.menu a{display:flex;align-items:center;min-height:48px;padding:0 var(--s3);border-radius:12px;font-weight:500}
+.menu a.on,.links a.on{color:var(--gold)}
+.menu .btn{margin-top:var(--s2)}
 
-        h1, h2, h3, .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
+/* hero */
+.hero{padding-block:0;min-height:calc(100svh - var(--nav));display:flex;align-items:center}
+.hero .wrap{display:grid;justify-items:center;text-align:center;gap:var(--s3);padding-block:var(--s4);animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.orbit{position:relative;width:clamp(120px,27svh,260px);aspect-ratio:1;margin:var(--s3)}
+.orbit::before{content:"";position:absolute;inset:-12%;border:1px dashed rgba(185,163,255,.45);border-radius:50%}
+.spin{position:absolute;inset:-12%;animation:spin 16s linear infinite}
+.spin i{position:absolute;top:-6px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px 3px rgba(200,244,58,.7)}
+.orbit img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:1px solid var(--border);box-shadow:0 0 70px -10px rgba(185,163,255,.45)}
+.hero h1{font-size:clamp(1.9rem,8.4vw,4.25rem);font-weight:800;max-width:16ch;background:linear-gradient(180deg,#fff 30%,var(--soft));-webkit-background-clip:text;background-clip:text;color:transparent}
+.type{display:grid;font-size:clamp(1rem,4.2vw,1.25rem);color:var(--gold);white-space:nowrap;min-height:1.7em}
+.type>*{grid-area:1/1}
+.type .ghost{visibility:hidden}
+.caret{display:inline-block;width:2px;height:1em;margin-left:2px;vertical-align:-.15em;background:var(--gold);animation:blink 1s steps(1) infinite}
+.hero p.sub{color:var(--muted);max-width:46ch;display:none}
+.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s3);margin-top:var(--s2)}
+.cta .btn{min-height:52px}
 
-        .text-gold { color: var(--gold); }
-        .bg-gold { background-color: var(--gold); }
-        .border-gold { border-color: var(--gold); }
+/* proof */
+.proof{padding-block:var(--s7);border-block:1px solid var(--border);background:var(--card)}
+.proof p{text-align:center;color:var(--muted);font-size:.9375rem;margin-bottom:var(--s5)}
+.names{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4) var(--s5);text-align:center;font:700 1.25rem var(--head);color:#C9CDDA}
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+/* about tiles */
+.tiles{display:grid;gap:var(--s3);margin-top:var(--s6)}
+.tile{display:flex;align-items:center;gap:var(--s4);padding:var(--s4);border-radius:var(--r);background:var(--card);border:1px solid var(--border);font-weight:600}
+.tile svg{color:var(--gold)}
 
-        .animate-fade-in {
-            animation: fadeInUp 1s ease-out forwards;
-        }
+/* cards */
+.cards{display:grid;gap:var(--s4);margin-top:var(--s6)}
+.card{position:relative;overflow:hidden;padding:var(--s5);border-radius:var(--r);background:linear-gradient(150deg,rgba(var(--c),.15),var(--card) 62%);border:1px solid rgba(var(--c),.3);transition:transform .25s,border-color .25s}
+.card::after{content:"";position:absolute;top:-50px;right:-50px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(var(--c),.3),transparent 70%);pointer-events:none}
+.card:hover{transform:translateY(-4px);border-color:rgba(var(--c),.6)}
+.card .ic{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:rgba(var(--c),.14);color:rgb(var(--c));margin-bottom:var(--s5)}
+.card h3{font-size:1.375rem;font-weight:700;margin-bottom:var(--s2)}
+.card p{color:var(--muted)}
+.c1{--c:var(--g)}.c2{--c:var(--teal)}.c3{--c:var(--vio)}
 
-        .delay-1 { animation-delay: 0.2s; }
-        .delay-2 { animation-delay: 0.4s; }
+/* quote */
+.quote{text-align:center}
+.quote .wrap{max-width:820px}
+.quote svg{width:40px;height:40px;color:var(--gold);opacity:.6;margin:0 auto var(--s5)}
+.quote blockquote{font:500 clamp(1.25rem,4.6vw,2rem)/1.35 var(--head);letter-spacing:-.01em}
+.who{margin-top:var(--s5)}
+.who b{display:block;color:var(--soft)}
+.who span{color:var(--muted);font-size:.9375rem}
 
-        /* Glassmorphism */
-        .glass {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-        }
+/* contact */
+.steps{list-style:none;padding:0;margin-top:var(--s6);display:grid;gap:var(--s3);counter-reset:s}
+.steps li{counter-increment:s;display:flex;align-items:center;gap:var(--s4);padding:var(--s3) var(--s4);border-radius:var(--r);background:var(--card);border:1px solid var(--border);font-weight:500}
+.steps li::before{content:counter(s);flex:none;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--gold);color:var(--ink);font:800 1rem var(--head)}
+.form{display:grid;gap:var(--s4);padding:var(--s5);border-radius:28px;background:linear-gradient(150deg,rgba(var(--g),.12),var(--card) 55%);border:1px solid rgba(var(--g),.3)}
+.f{display:grid;gap:6px}
+.f span{font-size:.875rem;font-weight:600;color:var(--muted)}
+.f input,.f textarea{width:100%;min-height:52px;padding:var(--s3) var(--s4);border-radius:14px;border:1px solid var(--border);background:var(--bg);outline:none;transition:border-color .2s,box-shadow .2s}
+.f textarea{min-height:120px;resize:vertical}
+.f input:focus,.f textarea:focus{border-color:var(--soft);box-shadow:0 0 0 3px rgba(139,92,246,.35)}
+.f input::placeholder,.f textarea::placeholder{color:#7E869B}
+.two{display:grid;gap:var(--s4)}
+.note{text-align:center;color:var(--muted);font-size:.875rem}
 
-        /* Hover Effects */
-        .service-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--gold);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
+/* footer + whatsapp */
+footer{padding:var(--s7) 0 calc(var(--s8) + env(safe-area-inset-bottom,0px));border-top:1px solid var(--border);text-align:center}
+footer .logo{font-size:1.5rem}
+footer p{color:var(--muted);margin-top:var(--s2)}
+.soc{display:flex;justify-content:center;gap:var(--s3);margin:var(--s5) 0}
+.soc a{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--border);color:var(--muted);transition:color .2s,border-color .2s,transform .2s}
+.soc a:hover{color:var(--gold);border-color:var(--gold);transform:translateY(-2px)}
+.copy{font-size:.875rem}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#06210F;box-shadow:0 10px 28px -6px rgba(37,211,102,.55);transition:transform .2s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:28px;height:28px}
 
-        html { scroll-behavior: smooth; }
-    </style>
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes blink{50%{opacity:0}}
+
+@media(min-width:640px){
+  .wrap{width:min(100% - 48px,1120px)}
+  .names{grid-template-columns:repeat(3,1fr)}
+  .tiles{grid-template-columns:repeat(3,1fr)}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .two{grid-template-columns:1fr 1fr}
+  .hero p.sub{display:block}
+  .form{padding:var(--s6)}
+}
+@media(min-width:900px){
+  .links{display:flex;gap:var(--s6);font-weight:500;color:var(--muted)}
+  .links a{display:inline-flex;align-items:center;min-height:44px;transition:color .2s}
+  .links a:hover{color:var(--text)}
+  .burger,.menu{display:none}
+  .nav-cta{display:inline-flex!important}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;text-align:left;justify-items:start;gap:var(--s5) var(--s8);align-items:center}
+  .hero .txt{display:grid;gap:var(--s4);justify-items:start}
+  .hero .orbit{grid-column:2;grid-row:1;justify-self:center;width:min(100%,380px);margin:0}
+  .cta{justify-content:flex-start}
+  .names{grid-template-columns:repeat(5,1fr)}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);align-items:center}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+.nav-cta{display:none;min-height:44px}
+@media(max-width:899px){.hero .txt{display:contents}}
+</style>
 </head>
-<body class="bg-white text-slate-900">
+<body>
 
-    <nav class="fixed w-full z-50 glass border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-black tracking-tighter uppercase font-serif">
-                Aliyan <span class="text-gold">Asgher</span>
-            </div>
-            
-            <div class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-widest text-slate-600">
-                <a href="#about" class="hover:text-gold transition">About</a>
-                <a href="#services" class="hover:text-gold transition">Services</a>
-                <a href="#testimonials" class="hover:text-gold transition">Success Stories</a>
-            </div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8 11h6"/></symbol>
+  <symbol id="trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8M15 7h6v6"/></symbol>
+  <symbol id="team" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20a6.5 6.5 0 0 0-4-6"/></symbol>
+  <symbol id="gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></symbol>
+  <symbol id="crown" viewBox="0 0 24 24"><path d="m3 18 2-11 5 5 2-7 2 7 5-5 2 11zM5 21h14"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="quote" viewBox="0 0 24 24"><path d="M9 7H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3v1a3 3 0 0 1-3 3M20 7h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3v1a3 3 0 0 1-3 3"/></symbol>
+</svg>
 
-            <a href="#contact" class="hidden md:block bg-gold text-white px-8 py-3 rounded-none font-bold text-xs uppercase tracking-widest hover:bg-black transition-all shadow-lg">
-                Book a Consultation
-            </a>
-
-            <div class="md:hidden text-2xl">
-                <i class="fas fa-bars text-slate-900"></i>
-            </div>
-        </div>
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Junaid Ameer, home">Junaid <b>Ameer</b></a>
+    <nav class="links" aria-label="Main">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#testimonials">Success Stories</a>
     </nav>
+    <a href="#contact" class="btn btn-p nav-cta">Book a consultation</a>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="menu" id="menu" aria-label="Mobile">
+    <a href="#about">About</a><a href="#services">Services</a><a href="#testimonials">Success Stories</a>
+    <a href="#contact" class="btn btn-p">Book a consultation</a>
+  </nav>
+</header>
 
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-50">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div class="animate-fade-in">
-                <span class="text-gold font-bold uppercase tracking-[0.3em] text-sm mb-4 block">Elite Business Strategy</span>
-                <h1 class="text-5xl md:text-7xl font-black leading-tight text-slate-900 mb-6">
-                    Scaling Businesses to <span class="italic">7-Figures</span> & Beyond.
-                </h1>
-                <p class="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
-                    Helping CEOs and corporate leaders optimize operations, master market leadership, and achieve sustainable high-performance growth.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" class="bg-slate-900 text-white px-10 py-5 text-center font-bold uppercase tracking-widest text-xs hover:bg-gold transition-all">
-                        Executive Intake
-                    </a>
-                    <a href="#services" class="border border-slate-300 px-10 py-5 text-center font-bold uppercase tracking-widest text-xs hover:border-gold transition-all">
-                        View Services
-                    </a>
-                </div>
-            </div>
-
-            <div class="relative animate-fade-in delay-1">
-                <div class="absolute -inset-4 border border-gold translate-x-8 translate-y-8 hidden md:block"></div>
-                <img src="junaid ameer (2).png" 
-                     alt="Aliyan Asgher" 
-                     class="relative z-10 w-full h-[600px] object-cover transition duration-700 shadow-2xl">
-            </div>
-        </div>
-    </section>
-
-    <div class="bg-slate-900 py-12">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-slate-500 uppercase tracking-[0.5em] text-[10px] mb-8 font-bold">Strategic Partnerships & Expertise</p>
-            <div class="flex flex-wrap justify-center gap-8 md:gap-20 opacity-40 grayscale contrast-125">
-                <span class="text-white text-2xl font-serif font-bold">GlobalCorp</span>
-                <span class="text-white text-2xl font-serif font-bold">TechFlow</span>
-                <span class="text-white text-2xl font-serif font-bold">ApexHoldings</span>
-                <span class="text-white text-2xl font-serif font-bold">Vanguard</span>
-                <span class="text-white text-2xl font-serif font-bold">OmniBlue</span>
-            </div>
-        </div>
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="orbit">
+      <div class="spin" aria-hidden="true"><i></i></div>
+      <img src="Junaidameer.jpg" alt="Portrait of Junaid Ameer, senior business strategist" width="260" height="260" fetchpriority="high">
     </div>
+    <div class="txt">
+      <h1 id="h1">Scaling businesses to 7-figures and beyond.</h1>
+      <p class="type" aria-live="off"><span class="ghost" id="ghost"></span><span><span id="typed"></span><span class="caret" aria-hidden="true"></span></span></p>
+      <p class="sub">Helping CEOs and corporate leaders optimise operations, master market leadership and achieve sustainable high-performance growth.</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-p">Executive intake <svg class="i" aria-hidden="true"><use href="#arrow"/></svg></a>
+        <a href="#services" class="btn btn-g">View services</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="services" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Core Strategic Pillars</h2>
-                <div class="h-1 w-20 bg-gold mx-auto"></div>
-            </div>
+<div class="proof">
+  <div class="wrap">
+    <p>Strategic partnerships and expertise</p>
+    <div class="names"><span>GlobalCorp</span><span>TechFlow</span><span>ApexHoldings</span><span>Vanguard</span><span>OmniBlue</span></div>
+  </div>
+</div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="service-card p-12 border border-slate-100 bg-slate-50 text-center">
-                    <i class="fas fa-chess-knight text-4xl text-gold mb-8"></i>
-                    <h3 class="text-2xl font-bold mb-4">Strategic Audits</h3>
-                    <p class="text-slate-600 leading-relaxed">In-depth analysis of your current business model to identify hidden leakages and growth opportunities.</p>
-                </div>
+<section id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <h2 class="h2" id="about-h">Strategy that moves the needle.</h2>
+    <p class="lead">I work with CEOs and corporate leaders from Faisalabad, Dubai and London to sharpen how their business runs and where it competes.</p>
+    <div class="tiles">
+      <div class="tile"><svg class="i" aria-hidden="true"><use href="#gear"/></svg>Optimise operations</div>
+      <div class="tile"><svg class="i" aria-hidden="true"><use href="#crown"/></svg>Master market leadership</div>
+      <div class="tile"><svg class="i" aria-hidden="true"><use href="#trend"/></svg>Sustainable growth</div>
+    </div>
+  </div>
+</section>
 
-                <div class="service-card p-12 border border-slate-100 bg-slate-50 text-center">
-                    <i class="fas fa-chart-line text-4xl text-gold mb-8"></i>
-                    <h3 class="text-2xl font-bold mb-4">Growth Scaling</h3>
-                    <p class="text-slate-600 leading-relaxed">Aggressive market expansion strategies designed to double your revenue while halving operational drag.</p>
-                </div>
+<section id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <h2 class="h2" id="svc-h">Three ways we work together.</h2>
+    <div class="cards">
+      <article class="card c1"><div class="ic"><svg class="i" aria-hidden="true"><use href="#search"/></svg></div><h3>Strategic audits</h3><p>In-depth analysis of your current business model to find hidden leakages and growth opportunities.</p></article>
+      <article class="card c2"><div class="ic"><svg class="i" aria-hidden="true"><use href="#trend"/></svg></div><h3>Growth scaling</h3><p>Aggressive market expansion strategies designed to double your revenue while halving operational drag.</p></article>
+      <article class="card c3"><div class="ic"><svg class="i" aria-hidden="true"><use href="#team"/></svg></div><h3>Elite leadership</h3><p>Developing executive presence and high-performance team cultures that drive institutional success.</p></article>
+    </div>
+  </div>
+</section>
 
-                <div class="service-card p-12 border border-slate-100 bg-slate-50 text-center">
-                    <i class="fas fa-users-gear text-4xl text-gold mb-8"></i>
-                    <h3 class="text-2xl font-bold mb-4">Elite Leadership</h3>
-                    <p class="text-slate-600 leading-relaxed">Developing executive presence and high-performance team cultures that drive institutional success.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="testimonials" class="quote" aria-labelledby="q-h">
+  <div class="wrap">
+    <h2 class="h2" id="q-h" style="margin-inline:auto;margin-bottom:var(--s6)">Success stories.</h2>
+    <svg class="i" aria-hidden="true" style="stroke-width:1.5"><use href="#quote"/></svg>
+    <blockquote>“Junaid’s strategic framework didn’t just help us grow; it completely transformed how we perceive market value. In 18 months, our valuation tripled.”</blockquote>
+    <div class="who"><b>James Harrington</b><span>CEO, Global Systems Inc.</span></div>
+  </div>
+</section>
 
-    <section id="testimonials" class="py-24 bg-slate-900 text-white">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <i class="fas fa-quote-left text-5xl text-gold opacity-30 mb-10"></i>
-            <div class="space-y-8">
-                <p class="text-2xl md:text-3xl font-serif italic leading-relaxed">
-                    "Aliyan's strategic framework didn't just help us grow; it completely transformed how we perceive market value. In 18 months, our valuation tripled."
-                </p>
-                <div>
-                    <h4 class="text-gold font-bold uppercase tracking-widest">James Harrington</h4>
-                    <p class="text-slate-500 text-sm">CEO, Global Systems Inc.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="contact" class="contact" aria-labelledby="c-h">
+  <div class="wrap">
+    <div>
+      <h2 class="h2" id="c-h">Secure your market advantage.</h2>
+      <p class="lead">Limited availability for Q3 and Q4. Serious inquiries only. Let’s discuss how to move the needle for your organisation.</p>
+      <ol class="steps">
+        <li>45-minute strategic deep dive</li>
+        <li>Competitive landscape mapping</li>
+        <li>Roadmap to high-scale growth</li>
+      </ol>
+    </div>
+    <form class="form" action="https://formspree.io/f/your-form-id" method="post">
+      <div class="two">
+        <label class="f"><span>Full name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required></label>
+        <label class="f"><span>Corporate email</span><input type="email" name="email" autocomplete="email" placeholder="you@company.com" required></label>
+      </div>
+      <label class="f"><span>Company name</span><input type="text" name="company" autocomplete="organization" placeholder="Your company"></label>
+      <label class="f"><span>Your main challenge</span><textarea name="challenge" rows="4" placeholder="Briefly describe your current primary challenge"></textarea></label>
+      <button class="btn btn-p" type="submit" style="min-height:56px">Request private session</button>
+      <p class="note">Your details stay private.</p>
+    </form>
+  </div>
+</section>
+</main>
 
-    <section id="contact" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Secure Your <br><span class="text-gold">Market Advantage</span></h2>
-                <p class="text-lg text-slate-600 mb-8">
-                    Limited availability for Q3/Q4. Serious inquiries only. Let's discuss how to move the needle for your organization.
-                </p>
-                <ul class="space-y-4 font-bold text-slate-800">
-                    <li><i class="fas fa-check text-gold mr-3"></i> 45-Minute Strategic Deep Dive</li>
-                    <li><i class="fas fa-check text-gold mr-3"></i> Competitive Landscape Mapping</li>
-                    <li><i class="fas fa-check text-gold mr-3"></i> Roadmap to High-Scale Growth</li>
-                </ul>
-            </div>
+<footer>
+  <div class="wrap">
+    <div class="logo">Junaid <b>Ameer</b></div>
+    <p>Faisalabad | Dubai | London</p>
+    <div class="soc">
+      <a href="#" aria-label="LinkedIn"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="5" r="2"/><path d="M10 9h4v2a4.5 4.5 0 0 1 7 3.5V21h-4v-6a2 2 0 0 0-3 0v6h-4z"/></svg></a>
+      <a href="#" aria-label="X (Twitter)"><svg class="i" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+    </div>
+    <p class="copy">&copy; <span id="yr">2025</span> Junaid Ameer. All rights reserved.</p>
+  </div>
+</footer>
 
-            <div class="bg-slate-50 p-8 md:p-12 shadow-2xl border-t-4 border-gold">
-                <form class="space-y-6">
-                    <div class="grid grid-cols-2 gap-4">
-                        <input type="text" placeholder="Full Name" class="w-full p-4 border-b border-slate-300 bg-transparent outline-none focus:border-gold">
-                        <input type="email" placeholder="Corporate Email" class="w-full p-4 border-b border-slate-300 bg-transparent outline-none focus:border-gold">
-                    </div>
-                    <input type="text" placeholder="Company Name" class="w-full p-4 border-b border-slate-300 bg-transparent outline-none focus:border-gold">
-                    <textarea rows="4" placeholder="Briefly describe your current primary challenge" class="w-full p-4 border-b border-slate-300 bg-transparent outline-none focus:border-gold"></textarea>
-                    <button class="w-full bg-slate-900 text-white py-5 font-black uppercase tracking-[0.2em] text-xs hover:bg-gold transition-all">
-                        Request Private Session
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
+<a class="wa" href="https://wa.me/yournumber" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="i" viewBox="0 0 24 24" style="stroke-width:1.8"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-2-2l.8-1-1-2z"/></svg></a>
 
-    <footer class="bg-slate-950 text-white py-12 border-t border-slate-900">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="text-xl font-bold font-serif mb-4 uppercase">Aliyan Asgher</div>
-            <p class="text-slate-500 text-sm mb-8">Faisalabad | Dubai | London</p>
-            <div class="flex justify-center space-x-6 text-slate-400 mb-8">
-                <a href="#" class="hover:text-gold transition"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="hover:text-gold transition"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="hover:text-gold transition"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="text-[10px] text-slate-700 uppercase tracking-widest">&copy; 2025 Aliyan Asgher. All Rights Reserved.</p>
-        </div>
-    </footer>
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  $('#yr').textContent = new Date().getFullYear();
 
-    <a href="https://wa.me/yournumber" target="_blank" class="fixed bottom-10 right-10 bg-[#25d366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-all z-[100]">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  /* mobile menu */
+  const b = $('#burger'), m = $('#menu');
+  const set = o => { b.setAttribute('aria-expanded', o); b.setAttribute('aria-label', o ? 'Close menu' : 'Open menu'); m.classList.toggle('open', o); };
+  b.addEventListener('click', () => set(b.getAttribute('aria-expanded') !== 'true'));
+  m.addEventListener('click', e => { if (e.target.closest('a')) set(false); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') set(false); });
 
+  /* hero typing */
+  const lines = ['Optimise operations. Own your market.', 'Sustainable high-performance growth.', 'Strategy built for CEOs and leaders.'];
+  const typed = $('#typed');
+  $('#ghost').textContent = lines.reduce((a, c) => (c.length > a.length ? c : a));
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) typed.textContent = lines[0];
+  else {
+    let li = 0, ci = 0, erase = false;
+    (function tick() {
+      const l = lines[li];
+      typed.textContent = l.slice(0, ci);
+      let d = erase ? 22 : 55;
+      if (!erase && ci === l.length) { erase = true; d = 5000; }
+      else if (erase && ci === 0) { erase = false; li = (li + 1) % lines.length; d = 400; }
+      else ci += erase ? -1 : 1;
+      setTimeout(tick, d);
+    })();
+  }
+
+  /* active section link */
+  const links = document.querySelectorAll('.links a,.menu a:not(.btn)');
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+  }), { rootMargin: '-45% 0px -50% 0px' });
+  ['about', 'services', 'testimonials'].forEach(id => io.observe(document.getElementById(id)));
+})();
+</script>
 </body>
 </html>
